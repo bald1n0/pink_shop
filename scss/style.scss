@@ -1,7 +1,18 @@
+/*-------------imports----------*/
+
 @import url(normalize.css);
 
-$mainColor: green;
+/*-------------/imports---------*/
+/*---------variables--------------*/ 
+ 
 
+$brandColor:#f16d7f;
+$lightBrandColor: #F8F3F4;
+$iBlack: #222222;
+$iWhite: #ffffff;
+$iGrey: #f7f7f7;
+$iDarkGrey: #e1e1e1;
+/*--------/variables--------------*/ 
 p {
-    color: $mainColor;
+    color: $brandColor;
 }
