@@ -1,6 +1,7 @@
 /*-------------imports----------*/
 
 @import url(normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
 
 /*-------------/imports---------*/
 /*---------variables--------------*/ 
@@ -13,6 +14,80 @@ $iWhite: #ffffff;
 $iGrey: #f7f7f7;
 $iDarkGrey: #e1e1e1;
 /*--------/variables--------------*/ 
-p {
-    color: $brandColor;
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1142px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 75px;
+    background-color: $iBlack;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__left, &__right {
+        display: flex;
+    }
+
+    &__logo {
+        margin: 0 40px 0 0;
+    }
+
+    &__search, &__search-form  {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__button {
+        border: none;
+        outline: none;
+        background-color: $iBlack;
+        margin: 0 20px 0 0;
+    }
+
+    &__input {
+        color: $iWhite;
+        background-color: $iBlack;
+        outline: none;
+        border: #222222;
+        border-bottom: 1px solid $iWhite;
+    }
+
+    &__right {
+        justify-content: flex-end;
+    }
+
+    &__burger {
+        display: flex;
+    }
+
+    &__user {
+        margin: 0 0 0 33px;
+    }
+
+    &__cart{
+        margin: 0 0 0 33px;
+        position: relative;
+        &:after {
+            content: "0";
+            position: absolute;
+            background-color: $brandColor;
+            color: $iWhite;
+            border-radius: 50%;
+            font-size: 12px;
+            line-height: 14px;
+            padding: 2px 5px;
+            left: 25px;
+            bottom: 20px;
+        }
+    }
 }
